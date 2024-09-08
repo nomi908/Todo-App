@@ -1,0 +1,77 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="Fragments.HomeFragment"
+    >
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:visibility="gone"
+        app:titleTextColor="@android:color/transparent"
+        />
+
+    <LinearLayout
+        android:id="@+id/searchlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:background="@drawable/searchbar_design"
+        android:orientation="horizontal"
+        android:padding="1dp"
+        android:layout_below="@+id/toolbar">
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:src="@drawable/ic_searchbar" />
+
+        <EditText
+            android:id="@+id/searchtextbox"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:hint="Search..."
+            android:padding="8dp"
+            android:focusable="false"
+            android:focusableInTouchMode="false" />
+
+    </LinearLayout>
+
+
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/searchlayout"
+        android:padding="24dp"
+        tools:listitem="@layout/item_notes"
+       />
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="24dp"
+        android:layout_marginBottom="24dp"
+        android:backgroundTint="@color/purple"
+        android:src="@drawable/ic_floatadd" />
+
+
+
+
+    </RelativeLayout>

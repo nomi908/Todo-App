@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Use dark icons in status bar -->
+    <style name="splashscreen" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="color">#FFFFFF</item>
+    </style>
+    <style name="mainactivity" parent="Theme.AppCompat.DayNight.NoActionBar">
+    </style>
+
+    <color name="mycolor">#8e5bf8</color>
+
+</resources>
