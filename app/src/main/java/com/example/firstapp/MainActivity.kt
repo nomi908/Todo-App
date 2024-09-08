@@ -22,6 +22,7 @@ class MainActivity : AppCompatActivity() {
 
 
     }
+    //fragment replacing
     private fun replaceFragment(fragment: Fragment){
         val fragmentTransaction: FragmentTransaction = supportFragmentManager.beginTransaction()
         fragmentTransaction.replace(R.id.fragemtslayout, fragment) // Ensure this ID matches your XML
